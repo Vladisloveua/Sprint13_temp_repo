@@ -6,10 +6,12 @@ namespace Sprint_13.Controllers
 {
     public class TasksController : Controller
     {
+
         public IActionResult Greetings() => View();
 
         public IActionResult SprintTasks() => View();
 
-        
+        public IActionResult ShoppingList() => View();
+
     }
 }
