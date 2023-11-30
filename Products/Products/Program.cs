@@ -1,3 +1,5 @@
+using Sprint_13.Services;
+
 namespace Products
 {
     public class Program
@@ -8,6 +10,7 @@ namespace Products
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddTransient<ITimeService, SimpleTimeService>();
 
             var app = builder.Build();
 
