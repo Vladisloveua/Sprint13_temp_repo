@@ -23,7 +23,17 @@ namespace Sprint_13.Controllers
             {"Ice Cream", 5 },
             {"Cola", 10 },
         };
-
+        private Dictionary<string, int> Products_list => new Dictionary<string, int>
+        {
+            {"Bread", 10 },
+            {"Milk", 11 },
+            {"Cheese", 140 },
+            {"Sausage", 110 },
+            {"Potato", 7 },
+            {"Banana", 23 },
+            {"Tomato", 25 },
+            {"Candy", 75 },
+        };
         public IActionResult Greetings() => View();
 
         public IActionResult SprintTasks() => View();
@@ -32,7 +42,7 @@ namespace Sprint_13.Controllers
 
         public IActionResult ProductInfo()
         {
-            List<Product> productList = ListProducts.Select(kv => new Product { Name = kv.Key, Price = kv.Value }).ToList();
+            List<Product> productList = Products_list.Select(kv => new Product { Name = kv.Key, Price = kv.Value }).ToList();
             return View(productList);
         }
         [HttpGet]

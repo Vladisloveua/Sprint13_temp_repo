@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Source\\Repos\\Sprint13_temp_repo\\Products\\Products\\Products.csproj": {}
+    "C:\\Users\\User\\source\\repos\\Sprint13_temp_repo\\Products\\Products\\Products.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Source\\Repos\\Sprint13_temp_repo\\Products\\Products\\Products.csproj": {
+    "C:\\Users\\User\\source\\repos\\Sprint13_temp_repo\\Products\\Products\\Products.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\Sprint13_temp_repo\\Products\\Products\\Products.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Sprint13_temp_repo\\Products\\Products\\Products.csproj",
         "projectName": "Products",
-        "projectPath": "C:\\Users\\User\\Source\\Repos\\Sprint13_temp_repo\\Products\\Products\\Products.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\Sprint13_temp_repo\\Products\\Products\\Products.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\User\\Source\\Repos\\Sprint13_temp_repo\\Products\\Products\\obj\\",
         "projectStyle": "PackageReference",
