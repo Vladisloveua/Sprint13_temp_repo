@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Products.Models;
 
 namespace Sprint_13.Controllers
 {
@@ -29,6 +30,11 @@ namespace Sprint_13.Controllers
 
         public IActionResult ShoppingList() => View();
 
+        public IActionResult ProductInfo()
+        {
+            List<Product> productList = ListProducts.Select(kv => new Product { Name = kv.Key, Price = kv.Value }).ToList();
+            return View(productList);
+        }
         [HttpGet]
         public IActionResult ShoppingCart()
         {
