@@ -38,7 +38,7 @@ namespace Sprint_13.Controllers
 
         public IActionResult SprintTasks() => View();
 
-        public IActionResult ShoppingList() => View();
+        public IActionResult ShoppingList() => View(ListProducts);
 
         public IActionResult ProductInfo()
         {
