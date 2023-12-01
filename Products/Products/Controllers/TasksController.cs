@@ -45,6 +45,11 @@ namespace Sprint_13.Controllers
             List<Product> productList = Products_list.Select(kv => new Product { Name = kv.Key, Price = kv.Value }).ToList();
             return View(productList);
         }
+        public IActionResult SuperMarkets()
+        {
+            ViewBag.Markets = Markets;
+            return View();
+        }
         [HttpGet]
         public IActionResult ShoppingCart()
         {
