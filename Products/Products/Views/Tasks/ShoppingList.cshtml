@@ -1,9 +1,23 @@
-﻿@{
+﻿@model Dictionary<string, int>
+
+@{
     ViewData["Title"] = "ShoppingList";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<h1>Our ShoppingList</h1>
+<table border="1" class="table1">
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Key</td>
+                <td>@product.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
 <div>
-
     @Html.Partial("TimeToBuy")
 </div>
+
